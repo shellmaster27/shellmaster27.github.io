@@ -135,12 +135,12 @@ body {
 
 
 
-/* Header Styling */
+/* Adjusted Buy Now Button Position */
 .header {
     position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 10; /* Ensures it stays on top */
+    top: 20px; /* Lower it slightly */
+    right: 30px; /* Move it more to the left */
+    z-index: 10;
 }
 
 /* Buy Now Button */
