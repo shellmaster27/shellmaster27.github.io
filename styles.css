@@ -5,15 +5,16 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px; /* Add padding */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .container {
     text-align: center;
     max-width: 800px;
     padding: 20px;
+    overflow: auto; /* Ensure content within the container can scroll */
 }
 
 .title {
@@ -49,7 +50,7 @@ body {
     font-size: 2rem;
     margin-top: 40px;
     color: #f1c40f;
-    animation: blink 2s infinite; /* Apply blinking effect */
+    animation: blink 2s infinite;
 }
 
 .features ul {
@@ -74,7 +75,6 @@ body {
     color: #7f8c8d;
 }
 
-/* Animations */
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -84,7 +84,6 @@ body {
     }
 }
 
-/* Blinking Text for Title */
 @keyframes blink {
     0% { color: #e74c3c; }
     25% { color: #f1c40f; }
