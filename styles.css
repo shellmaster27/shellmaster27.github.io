@@ -180,3 +180,68 @@ body {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(255, 255, 255, 0.8);
     }
 }
+
+
+
+
+
+/* Social Header Styling */
+.social-header {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    gap: 10px; /* Space between icons */
+    z-index: 10; /* Ensures it stays on top */
+}
+
+/* Social Icon Buttons */
+.social-icon {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 0.8rem; /* Smaller font size for social icons */
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: snow 1.5s infinite;
+    background: #34495e; /* Default dark color */
+    border: 2px solid #2c3e50;
+}
+
+/* Specific Background Colors for Each Platform */
+.instagram {
+    background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045); /* Instagram gradient */
+}
+.tiktok {
+    background: linear-gradient(45deg, #69c9d0, #ee1d52, #fff); /* TikTok colors */
+    color: #000;
+}
+.twitter {
+    background: #1da1f2; /* Twitter blue */
+    color: #fff;
+}
+.telegram {
+    background: #0088cc; /* Telegram blue */
+    color: #fff;
+}
+
+/* Hover Effect for Social Icons */
+.social-icon:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+}
+
+/* Shared Animation (Snow Effect) */
+@keyframes snow {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 255, 255, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 25px rgba(255, 255, 255, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+}
