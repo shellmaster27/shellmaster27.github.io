@@ -9,6 +9,3 @@ function getRandomColor() {
     const colors = ['#e74c3c', '#f1c40f', '#1abc9c', '#8e44ad'];
     return colors[Math.floor(Math.random() * colors.length)];
 }
-
-// No JavaScript is needed for the button or rotating Santa, but this script can handle future effects
-console.log("$ANTA Meme Coin page is ready!");
