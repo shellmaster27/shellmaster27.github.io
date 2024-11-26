@@ -22,6 +22,7 @@ body {
     font-weight: bold;
     color: #e74c3c;
     text-shadow: 0 0 10px #c0392b, 0 0 20px #e74c3c;
+    margin-top: 10px; /* Adjust this value to reduce space */
 }
 
 .santa-head {
