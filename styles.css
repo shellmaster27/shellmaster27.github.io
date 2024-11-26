@@ -131,3 +131,52 @@ body {
     color: #fff;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
+
+
+
+
+/* Header Styling */
+.header {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 10; /* Ensures it stays on top */
+}
+
+/* Buy Now Button */
+.buy-now-button {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: #3498db;
+    border: 2px solid #2980b9;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: snow 1.5s infinite;
+}
+
+/* Hover Effect for the Buy Now Button */
+.buy-now-button:hover {
+    background: #e74c3c;
+    color: #fff;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+/* Same "Snow" Animation as the Telegram Button */
+@keyframes snow {
+    0% {
+        background: #3498db;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 255, 255, 0.4);
+    }
+    50% {
+        background: #e74c3c;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 25px rgba(255, 255, 255, 0.6);
+    }
+    100% {
+        background: #2980b9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+}
