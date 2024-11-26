@@ -11,17 +11,15 @@ body {
 
 /* Rotating Santa */
 .santa-container {
-  margin-top: 20px;
+  margin: 20px auto;
 }
-
-#rotating-santa {
+.rotating-santa {
   width: 150px;
   height: 150px;
-  animation: spin 8s linear infinite;
+  animation: rotate 5s linear infinite;
 }
 
-/* Rotation Animation */
-@keyframes spin {
+@keyframes rotate {
   from {
     transform: rotate(0deg);
   }
@@ -30,17 +28,54 @@ body {
   }
 }
 
-/* Content Styles */
-.content {
-  margin: 20px auto;
+/* Headings and Text */
+h1 {
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 10px auto;
   max-width: 600px;
 }
 
-h1 {
-  font-size: 3rem;
-  margin: 10px;
+h2 {
+  margin-top: 30px;
+  font-size: 2rem;
 }
 
-h2 {
-  font-size: 2rem;
-  margin: 20px 0 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+/* Button Styles */
+.button-container {
+  margin-top: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  background-color: #e63946;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cta-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+}
