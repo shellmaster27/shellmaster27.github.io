@@ -1,84 +1,46 @@
+/* General Styles */
 body {
-    font-family: 'Courier New', Courier, monospace;
-    background: linear-gradient(135deg, #2c3e50, #2980b9);
-    color: #fff;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('snow.gif') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
 }
 
-.container {
-    text-align: center;
-    max-width: 800px;
-    padding: 20px;
+/* Rotating Santa */
+.santa-container {
+  margin-top: 20px;
 }
 
-.title {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #e74c3c;
-    text-shadow: 0 0 10px #c0392b, 0 0 20px #e74c3c;
+#rotating-santa {
+  width: 150px;
+  height: 150px;
+  animation: spin 8s linear infinite;
 }
 
-.santa-head {
-    margin: 20px 0;
-    width: 200px;
-    height: 200px;
-    position: relative;
-    display: inline-block;
-    animation: spin 5s infinite linear;
-}
-
-.santa-head img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    box-shadow: 0 0 15px #000;
-}
-
-.main-text {
-    font-size: 1.5rem;
-    color: #ecf0f1;
-    margin: 20px 0;
-}
-
-.features h2 {
-    font-size: 2rem;
-    margin-top: 40px;
-    color: #f1c40f;
-}
-
-.features ul {
-    list-style-type: none;
-    padding: 0;
-    font-size: 1.2rem;
-}
-
-.features li {
-    margin: 10px 0;
-    color: #bdc3c7;
-}
-
-.features li::before {
-    content: "❄️ ";
-    color: #1abc9c;
-}
-
-.footer {
-    margin-top: 50px;
-    font-size: 1rem;
-    color: #7f8c8d;
-}
-
-/* Animations */
+/* Rotation Animation */
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
+
+/* Content Styles */
+.content {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 20px 0 
