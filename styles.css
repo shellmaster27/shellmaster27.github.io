@@ -3,8 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background: url('snow.gif') no-repeat center center fixed;
-  background-size: cover;
+  background: #8b0000; /* Dark red background */
   color: white;
   text-align: center;
   overflow: hidden;
@@ -97,19 +96,4 @@ li {
 
 .buy-now-button {
   padding: 10px 30px;
-  font-size: 1rem;
-  font-weight: bold;
-  color: white;
-  background-color: #e63946; /* Christmas Red */
-  border: none;
-  border-radius: 10px;
-  text-decoration: none;
-  cursor: pointer;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.buy-now-button:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
-}
+  font-size
