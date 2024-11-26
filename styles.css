@@ -245,3 +245,44 @@ body {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(255, 255, 255, 0.8);
     }
 }
+
+
+/* Social Header Styling */
+.social-header {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    gap: 10px; /* Space between icons */
+    z-index: 10; /* Ensures it stays on top */
+}
+
+/* Adjust Buy Now button on mobile */
+@media screen and (max-width: 768px) {
+    /* Move Buy Now button to a more appropriate location */
+    .header {
+        top: 80px; /* Lower the Buy Now button more on mobile */
+        right: 10px; /* Keep it closer to the right edge */
+    }
+
+    /* Adjust Social Icons on smaller screens */
+    .social-header {
+        top: 80px; /* Move social icons down a bit */
+        left: 10px; /* Keep them near the left edge */
+        flex-direction: row; /* Stack icons horizontally */
+        gap: 15px; /* More space between icons */
+    }
+
+    /* Adjust size of social buttons on mobile */
+    .social-icon {
+        padding: 6px 10px; /* Smaller icons */
+        font-size: 0.75rem; /* Smaller text for better fit */
+    }
+
+    /* Optionally, make Buy Now button smaller for mobile */
+    .buy-now-button {
+        font-size: 0.9rem; /* Smaller text for mobile */
+        padding: 10px 15px; /* Adjust padding */
+    }
+}
+
