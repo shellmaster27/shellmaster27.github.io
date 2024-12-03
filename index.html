@@ -5,11 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>$LZRSANTA Coin - A Creepy Christmas Adventure</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Pop-up styling */
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 20px 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            display: none; /* Initially hidden */
+            z-index: 1000; /* On top of all other content */
+        }
+    </style>
 </head>
-<header class="header">
-    <a href="#" class="buy-now-button">Buy Now</a>
-</header>
 <body>
+    <header class="header">
+        <a href="#" class="buy-now-button" onclick="copyContractAddress()">Buy Now</a>
+    </header>
+
+    <div class="popup" id="popup">Contract Address copied to your clipboard!</div>
+
     <div class="container">
         <h1 class="title">🎅 $LZRSANTA Coin 🎄</h1>
         <div class="santa-head">
@@ -19,15 +39,6 @@
         <section class="features">
             <h2>Why Join $LZRSANTA?</h2>
             <a href="https://t.me/lazersanta" class="join-button">Join our Telegram</a>
-            
-            <!-- Social Media Links Moved Here -->
-            <div class="social-header">
-                <a href="https://www.instagram.com/lazersantasol/" target="_blank" class="social-icon instagram">Instagram</a>
-                <a href="https://www.tiktok.com/@lazersantasol" target="_blank" class="social-icon tiktok">TikTok</a>
-                <a href="https://x.com/lazersanta" target="_blank" class="social-icon twitter">Twitter</a>
-                <a href="https://t.me/lazersanta" target="_blank" class="social-icon telegram">Telegram</a>
-            </div>
-
             <ul>
                 <li>🎁 Limited Time Event: Santa's generosity doesn't last forever.</li>
                 <li>🌌 Holiday Cheer with a Dark Side: Experience a Christmas like never before.</li>
@@ -38,6 +49,25 @@
             <p>Spread the festive chaos and conquer $ANTA's Bags this Christmas!</p>
         </footer>
     </div>
-    <script src="scripts.js"></script>
+
+    <script>
+        function copyContractAddress() {
+            const contractAddress = "45pL2SyrakgCTP6Jbf471WjbA3CSa99vqo6GH16apump";
+            
+            // Copy the contract address to the clipboard
+            navigator.clipboard.writeText(contractAddress).then(() => {
+                // Show the pop-up
+                const popup = document.getElementById('popup');
+                popup.style.display = 'block';
+
+                // Hide the pop-up after 3 seconds
+                setTimeout(() => {
+                    popup.style.display = 'none';
+                }, 3000);
+            }).catch(err => {
+                console.error("Failed to copy contract address: ", err);
+            });
+        }
+    </script>
 </body>
 </html>
